@@ -104,7 +104,7 @@ a:hover {
 }
 
 .product {
-    flex: 1 1 calc(50% - 20px); /* Tres productos por fila */
+    flex: 1 1 calc(50% - 20px);
     margin: 10px;
     padding: 20px;
     border: 1px solid #ddd;
