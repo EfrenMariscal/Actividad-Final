@@ -1,0 +1,333 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px ;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+.cover-image {
+    position: relative;
+    height: 400px;
+    background-image: url('cover.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-title h1 {
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    color: #888;
+}
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1 1 calc(50% - 20px); /* Tres productos por fila */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Centrar verticalmente los elementos dentro del contenedor */
+}
+
+.product .product-info {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center; /* Alinear texto al centro */
+}
+
+.product img {
+    max-width: 50%;
+    height: 250px;
+}
+h3{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+h4{
+    padding-bottom: 2%;
+}
+
+
+/* Estilos específicos para la página Quiénes Somos */
+
+.about-section,
+.values-section,
+.mission-vision-section,
+.team-section {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    font-size: 36px;
+    color: #00ffcc;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.values-section ul {
+    padding-left: 0;
+}
+
+.values-section li {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.mission-vision-section h2 {
+    color: #00ffcc;
+}
+
+.team-section {
+    background-color: #222;
+    text-align: center;
+    color: #fff;
+}
+
+.team-section img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5); /* Sombra suave */
+}
+/*Estilos*/
+
+.section-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section-image img {
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.section-description {
+    max-width: 400px;
+    text-align: left;
+}
+
+.section-description h2 {
+    font-size: 24px;
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+.section-description p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+}
+nav ul li:nth-child(1) a {
+    background-color: #d900ce; /* Color de fondo para el enlace de Inicio */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(2) a {
+    background-color: #00944f; /* Color de fondo para el enlace de Quiénes Somos */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(3) a {
+    background-color: #f8b200; /* Color de fondo para el enlace de Productos */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(4) a {
+    background-color: #6699ff; /* Color de fondo para el enlace de Contáctenos */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* Estilos específicos para la página Contáctenos */
+
+.contact-section {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contact-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #00ffcc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.map {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 50px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    color: #00ffcc;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 18px;
+    color: #00ffcc;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    width: 150px;
+    padding: 10px;
+    background-color: #00ffcc;
+    color: #222;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00ccaa;
+}
+
+@media (max-width: 768px) {
+    .contact-section .container {
+        padding: 0 20px;
+    }
+}

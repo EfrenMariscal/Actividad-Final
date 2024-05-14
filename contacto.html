@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - Bar La Panama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Bar La Panama">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+        <div id="dayOfWeek"></div>
+    </header>
+    <div class="cover-image" id="home">
+        <div class="overlay"></div>
+        <div class="page-title">
+            <h1>Productos</h1>
+        </div>
+    </div>
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contáctenos</h2>
+                <div class="contact-info">
+                    <p><strong>Ubicación:</strong> Calle Principal, Ciudad de Panamá</p>
+                    <p><strong>Correo Electrónico:</strong> info@barlapanama.com</p>
+                    <p><strong>Teléfono:</strong> +507 123456789</p>
+                </div>
+                <div class="map">
+                    <!-- Embed del mapa de Google Maps -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156923.1911268205!2d-79.52234541687836!3d9.066089263122799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9150d6f5f02935%3A0x5a9ab7c16e0b705e!2sPanam%C3%A1!5e0!3m2!1ses-419!2sni!4v1623808450029!5m2!1ses-419!2sni" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contact-form">
+                    <h3>Formulario de Contacto</h3>
+                    <form id="contactForm" onsubmit="return submitForm()">
+                        <div class="form-group">
+                            <label for="firstName">Nombre:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Apellido:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Efren Mariscal 2016. Sitio Web con todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
